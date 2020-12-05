@@ -1,0 +1,13 @@
+version: '3'
+services:
+  compeBox:
+    build: ./
+    user: root
+    volumes:
+      - ./:/work
+    working_dir: /work
+    ports:
+      - "8888:8888"
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
