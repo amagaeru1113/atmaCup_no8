@@ -22,6 +22,14 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 
 (上記入賞については submit に使用したコードの提出、並びに submit の再現が取れると運営が判断した後お送りいたします。内容の再現が取れない等、場合によっては表彰を取りやめる場合がございますこと、ご承知おきくださいませ。)
 
+## on shell command
+docker上で実行
+
+`jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token=''`
+
+<!-- https://qiita.com/tay2501/items/1f82f16447bdff86247d -->
+<!-- http://sweng.web.fc2.com/ja/program/python/jupyter-notebook.html -->
+
 ## Info
 
 - metric:[RMSLEの話][RMSLE_memo]

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  compeBox:
+  compe-box:
     build: ./
     user: root
     volumes:
