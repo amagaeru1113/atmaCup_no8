@@ -137,7 +137,7 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
     - Rating
         - ゲームのレーティング
         - 年齢制限とか暴力表現とかの区分
-        
+         
 - ベン図を見て
     - Publisherが全然重なっていない。test.csv見てみるとunknownが割とある.
     - Developerも半分くらい重なっている程度。
@@ -172,14 +172,23 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 
 
 
+- [RMSLE を最適化する小技][RMSLEkowaza]
 
 
 
+### 2020/12/09
 
+- [Cross Validationについて][discuss_takaito]
+    - Publicherの取り扱いがここにも効いてる？
 
+特徴量生成の勘所がまだわからないので、作ってCV見てをやる
+- PlatformとGenreをつなげてカテゴリ変数を作る
+    - ハードによって人気ジャンルが微妙に変わったりしないか？
 
 <!-- refs -->
 [kaggle_diary]:https://github.com/fkubota/kaggle-Cornell-Birdcall-Identification
 [atmaCup]:https://www.guruguru.science/competitions/13/
 [RMSLE_memo]:https://qiita.com/shnchr/items/a88b1eb2bba8002ecd5d
 [tbd]:https://www.quicktranslate.com/blog/2013/11/%E8%8B%B1%E8%AA%9E%E3%81%AE%E8%B3%87%E6%96%99%E3%81%AB%E5%87%BA%E3%81%A6%E3%81%8F%E3%82%8B%EF%BC%88tbc%EF%BC%89%E3%82%84-%EF%BC%88tbd%EF%BC%89%E3%81%AF%E4%BD%95%E3%81%AE%E7%95%A5%EF%BC%9F/
+[RMSLEkowaza]:https://www.guruguru.science/competitions/13/discussions/cbb736e9-f0f7-4847-811e-fe038e8ed0e8/
+[discuss_takaito]:https://www.guruguru.science/competitions/13/discussions/42fc473d-4450-4cfc-b924-0a5d61fd0ca7/
