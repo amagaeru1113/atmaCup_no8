@@ -39,6 +39,7 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 ## Info
 
 - metric:[RMSLEの話][RMSLE_memo]
+- CVLog: [spread sheet][https://docs.google.com/spreadsheets/d/1wwAUyKqVpQAk9revSrsJkd7qMdwX6uwzxfx7F_tr8SY/edit?usp=sharing]
 
 
 ## Dataset
@@ -183,7 +184,28 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 
 特徴量生成の勘所がまだわからないので、作ってCV見てをやる
 - PlatformとGenreをつなげてカテゴリ変数を作る
-    - ハードによって人気ジャンルが微妙に変わったりしないか？
+    - ハードによって人気ジャンルが微妙に変わったりしないか
+    - RMSLEが0.1くらい増えたのでスコアとしては悪くなった？
+
+- Year_of_releaseをみると1990, 2000, 2010を境に増減があるような気がする
+    - 1990, 2000, 2010でカテゴリA,B,C,Dに分ける。nan等はE。
+
+- CricitやUserのScore、Countを使ってみる
+    - Criticは100点満点でUserは10点満点ポイ
+    - scoreとcountを乗算した特徴量を作る
+
+### 2020/12/10
+- spread sheetにCVとか記録し始める（判断が遅い）
+- [Nameからシリーズ名の抽出][series_from_name]levenstein
+
+#### シリーズ名の取得試行錯誤
+- [【Python】『レーベンシュタイン距離』を計算してみた][levenshtein]
+- [2つの文字列間で共通の部分文字列を見つける][common_prefix]
+
+
+titleからstopwordsを除外して、先頭2文字を取って、同様のタイトルがあるテキストファイル か
+
+
 
 <!-- refs -->
 [kaggle_diary]:https://github.com/fkubota/kaggle-Cornell-Birdcall-Identification
@@ -192,3 +214,6 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 [tbd]:https://www.quicktranslate.com/blog/2013/11/%E8%8B%B1%E8%AA%9E%E3%81%AE%E8%B3%87%E6%96%99%E3%81%AB%E5%87%BA%E3%81%A6%E3%81%8F%E3%82%8B%EF%BC%88tbc%EF%BC%89%E3%82%84-%EF%BC%88tbd%EF%BC%89%E3%81%AF%E4%BD%95%E3%81%AE%E7%95%A5%EF%BC%9F/
 [RMSLEkowaza]:https://www.guruguru.science/competitions/13/discussions/cbb736e9-f0f7-4847-811e-fe038e8ed0e8/
 [discuss_takaito]:https://www.guruguru.science/competitions/13/discussions/42fc473d-4450-4cfc-b924-0a5d61fd0ca7/
+[series_from_name]:https://www.guruguru.science/competitions/13/discussions/c6874ba1-4f51-46d2-85e5-69d3b767d77e/
+[common_prefix]:https://www.it-swarm-ja.tech/ja/python/2%E3%81%A4%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E9%96%93%E3%81%A7%E5%85%B1%E9%80%9A%E3%81%AE%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B/1042437700/
+[levenshtein]:https://qiita.com/ayuma/items/befa11396a7c3cc10f6c
