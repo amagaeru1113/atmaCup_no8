@@ -203,7 +203,17 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 - [2つの文字列間で共通の部分文字列を見つける][common_prefix]
 
 
-titleからstopwordsを除外して、先頭2文字を取って、同様のタイトルがあるテキストファイル か
+###　2020/12/11
+- nameからシリーズを取り出す→うまいことできない
+    - tf-idfして似ているタイトル抽出できるか
+- Publisher_Genre_Count：publisherごとのgenre数→これで0.8突入
+- Publisher_Platform_Count：publisherごとのplatform数→あんまり変わらんかった
+- Violence：ratingの暴力表現を含むかどうかでbooleanを作る
+    - M、AOであればviolenceだとする
+    - ViolenceカラムをCountEncodingしたりSalesにいれるとスコアが良くなった。
+    - これでちゃんと理由まで把握してやれるようにならないといけないが、現状はスコアを追うだけで精一杯やな。
+- 編集距離の近い物で最澄一致文字列を取得するやつでシリーズタイトルをとる？
+- whole_dfでPublicher=Unknownは不明なのでNaNにする。Unknownて言う会社があることになるから。
 
 
 
