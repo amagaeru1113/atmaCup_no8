@@ -18,9 +18,7 @@
 - 2020/12/06: 17:00 ~ 18:00 | より深くデータを見て予測性能を改善する
 
 ### Prize
-private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製のメダルをお送りします。また開催期間中ディスカッションで最も「いいね」をもらえたユーザーにも nyk510 賞をお送りします。
-
-(上記入賞については submit に使用したコードの提出、並びに submit の再現が取れると運営が判断した後お送りいたします。内容の再現が取れない等、場合によっては表彰を取りやめる場合がございますこと、ご承知おきくださいませ。)
+private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製のメダルをお送りします。また開催期間中ディスカッションで最も「いいね」をもらえたユーザーにも nyk510 賞をお送りします。(上記入賞については submit に使用したコードの提出、並びに submit の再現が取れると運営が判断した後お送りいたします。内容の再現が取れない等、場合によっては表彰を取りやめる場合がございますこと、ご承知おきくださいませ。)
 
 ## Command
 
@@ -39,27 +37,17 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 ## Info
 
 - metric:[RMSLEの話][RMSLE_memo]
-- CVLog: [spread sheet][https://docs.google.com/spreadsheets/d/1wwAUyKqVpQAk9revSrsJkd7qMdwX6uwzxfx7F_tr8SY/edit?usp=sharing]
+- CVLog: [spread sheet][spread_sheet]
 
 
-## Dataset
-
-|name|detail|ref|
-|-|-|-|
-||||
-
-## Discussion
-
-|title|summary|memo|
-|-|-|-|
-|dis1|sum|memo|
 
 
 ## Log
 
 ### 2020/12/05
 - join
-- 環境構築（pyenv + pyenv-virtualenv on vscode）またGoogleDrive:Colaboratory
+- 環境構築（pyenv + pyenv-virtualenv on vscode or Dockerで動かす）でローカル
+- GoogleDrive:Colaboratory
 - 初心者向け分析講座を視聴。notebookはnotebook_downloadsに入れる。
 
 ### 2020/12/07
@@ -94,14 +82,14 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
         - シリーズ物の判定は聞きそう。ナンバリングされているか、固有の名称を持っているか（LEGO、Zeldaとか）
     - Platform
         - 欠損なし
-        - よく聞くハードかそうでないかは聞くかな？普及率が違いそうだし。(任天堂、SONY)
+        - よく聞くハードかそうでないかはどうか？普及率が違いそうだし。(任天堂、SONY)
     - Year_of_Release
         - 欠損84こあり（1%）
-        - 1990年を境にして次第に発売が増えている気がする
+        - 1990年を境にして次第に発売が増えている？
     - Genre
         - 欠損なし
         - 値12個なので、そのまま使って良さそう
-        - 仮にやるとしたらアクション要素があるかとか？ちょっと微妙
+        - 何かを組み合わせてみたい
     - Publisher
         - 欠損なし
         - 値が295もあるので有名どころとOtherで分ける特徴量があっても良さそう
@@ -123,16 +111,18 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
         - 欠損が50%こえ
     - Critic_Count（評論家のレビュー数）
         - 欠損が50%こえ
+        - 100点満点っぽい
     - User_Score（ユーザーレビュースコア）
         - 欠損40%こえ
-        - 小数点1位まで使うっぽいなあ
-        - tbdってなんや（[参考][tbd]）この扱いはわから
+        - 小数点1位まで使う？
+        - 10点満点？
+        - tbdってなんや（[参考][tbd]）
             - TBC = To Be Confirmed  （確認中）
             - TBD = To Be Determined  （現在未決定だが、将来決定する）
             - TBA = To Be Announced  （後日発表）
     - User_count(ユーザーレビュー数)
         - 欠損55%
-        - 0付近に多いなあ。どのソフトも大量のレビューがあるわけではない。
+        - 0付近に多い。どのソフトも大量のレビューがあるわけではない。
     - Developer（開発元）
         - 大手の開発元とそうでないで分けられないか（開発ソフト数が100本以上なら大手とか）
     - Rating
@@ -233,6 +223,7 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 
 [リーダーボード][leaderboard]
 <!-- refs -->
+[spread_sheet]:https://docs.google.com/spreadsheets/d/1wwAUyKqVpQAk9revSrsJkd7qMdwX6uwzxfx7F_tr8SY/edit?usp=sharing
 [kaggle_diary]:https://github.com/fkubota/kaggle-Cornell-Birdcall-Identification
 [atmaCup]:https://www.guruguru.science/competitions/13/
 [RMSLE_memo]:https://qiita.com/shnchr/items/a88b1eb2bba8002ecd5d
