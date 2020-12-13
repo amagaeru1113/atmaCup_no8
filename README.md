@@ -59,7 +59,7 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 
 ### 2020/12/05
 - join
-- 環境構築（poetry + docker + jupyterlab）
+- 環境構築（pyenv + pyenv-virtualenv on vscode）またGoogleDrive:Colaboratory
 - 初心者向け分析講座を視聴。notebookはnotebook_downloadsに入れる。
 
 ### 2020/12/07
@@ -203,7 +203,7 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 - [2つの文字列間で共通の部分文字列を見つける][common_prefix]
 
 
-###　2020/12/11
+### 2020/12/11
 - nameからシリーズを取り出す→うまいことできない
     - tf-idfして似ているタイトル抽出できるか
 - Publisher_Genre_Count：publisherごとのgenre数→これで0.8突入
