@@ -215,8 +215,23 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 - 編集距離の近い物で最澄一致文字列を取得するやつでシリーズタイトルをとる？
 - whole_dfでPublicher=Unknownは不明なのでNaNにする。Unknownて言う会社があることになるから。
 
+### 2020/12/12
+- [PCAとKmeansのdisscuss][disscuss_takaby]を参考にPCA、Kmeansをカラム追加してみる
+    - PCAカラムは扱いがわかってなくて改善せず
+    - Kmeansは多少改善したか？
+- 実験管理のミスで何をしてスコアが0.9に戻ったかわからなくなる
+
+### 2020/12/13
+- 今日の18時が締め切り
+- Publisher_Genre_Count系列で色々足し引きしてみる
 
 
+### 終了
+スコア0.9036 shakedown 4
+- LB：44位　
+- LB敢闘賞:40位
+
+[リーダーボード][leaderboard]
 <!-- refs -->
 [kaggle_diary]:https://github.com/fkubota/kaggle-Cornell-Birdcall-Identification
 [atmaCup]:https://www.guruguru.science/competitions/13/
@@ -227,3 +242,5 @@ private leaderboard 上位 (通常LB + 敢闘賞LB) のチームに atma 謹製�
 [series_from_name]:https://www.guruguru.science/competitions/13/discussions/c6874ba1-4f51-46d2-85e5-69d3b767d77e/
 [common_prefix]:https://www.it-swarm-ja.tech/ja/python/2%E3%81%A4%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E9%96%93%E3%81%A7%E5%85%B1%E9%80%9A%E3%81%AE%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B/1042437700/
 [levenshtein]:https://qiita.com/ayuma/items/befa11396a7c3cc10f6c
+[disscuss_takaby]:https://www.guruguru.science/competitions/13/discussions/8c7a3e1b-55f8-4c93-9897-b331346afbfd/
+[leaderboard]:https://www.guruguru.science/competitions/13/leaderboard 
